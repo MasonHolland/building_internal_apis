@@ -1,6 +1,7 @@
 class Api::V1::ItemsController < ApplicationController
   def index
-    render(json: Item.all)
+    @items = Item.all
+    # render(json: Item.all)
   end
 
   def show
