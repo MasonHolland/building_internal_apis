@@ -1,11 +1,11 @@
 class Api::V1::OrdersController < ApplicationController
 
   def index
-    render(json: Item.all)
+    render(json: Order.all)
   end
 
   def show
-    render(json: Item.find(params[:id]))
+    render(json: Order.find(params[:id]))
   end
 
 end
